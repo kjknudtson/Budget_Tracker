@@ -1,10 +1,5 @@
-const CACHE_NAME = "static-cache-budget-v1";
-const DATA_CACHE_NAME = "data-cache-budget-v1";
-
-const iconSizes = ["192", "512"];
-const iconFiles = iconSizes.map(
-  (size) => `/assets/icons/icon-${size}x${size}.png`
-);
+const CACHE_NAME = "static-cache-v1";
+const DATA_CACHE_NAME = "data-cache-v1";
 
 
 const staticFilesToPreCache = [
@@ -14,7 +9,7 @@ const staticFilesToPreCache = [
     "/db.js",
     "/manifest.webmanifest",
     "/assets/css/styles.css"
-].concat(iconFiles);
+];
 
 
 self.addEventListener("install", function(evt) {
